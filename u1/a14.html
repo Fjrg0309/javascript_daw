@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Seleccionar imagen</title>
+  <script src="a14.js" defer></script>
+</head>
+<body>
+  <h2>Cargar imágenes desde el disco</h2>
+  <input type="file" id="imagenInput" multiple accept="image/*"><br><br>
+  <select id="listaImagenes" onchange="mostrarImagen()">
+    <option value="">Selecciona una imagen</option>
+  </select><br><br>
+  <img id="imagenSeleccionada" src="" alt="Vista previa" style="max-width: 400px; display: none;">
+</body>
+</html>

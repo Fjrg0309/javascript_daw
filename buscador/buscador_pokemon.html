@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buscador.css">
+    <script src="buscador.js" defer></script>
+    <title>Buscador Pokémon</title>
+</head>
+<body>
+    <h1>Buscador Pokémon</h1>
+    <div class="buscador-wrap">
+        <input type="text" id="buscador" placeholder="Nombre o ID del Pokémon" aria-label="Buscar Pokémon" autocomplete="off">
+        <button type="button" id="buscar">Buscar</button>
+        
+        <ul id="sugerencias" role="listbox" aria-live="polite"></ul>
+    </div>
+
+    <div id="resultado"></div>
+</body>
+
+</html>

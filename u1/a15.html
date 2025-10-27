@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <script src="a15.js" defer></script>
+  <title>Estilo de texto</title>
+</head>
+<body>
+  <h2>Texto con estilos configurables</h2>
+  <div id="texto" style="font-size: 20px;">Este es un texto de ejemplo.</div><br>
+  <label for="negritaSelect">Negrita:</label>
+  <select id="negritaSelect" onchange="aplicarEstilos()">
+    <option value="normal">No</option>
+    <option value="bold">Sí</option>
+  </select><br><br>
+  <label for="cursivaSelect">Cursiva:</label>
+  <select id="cursivaSelect" onchange="aplicarEstilos()">
+    <option value="normal">No</option>
+    <option value="italic">Sí</option>
+  </select>
+</body>
+</html>
