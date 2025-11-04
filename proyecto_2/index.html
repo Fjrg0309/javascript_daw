@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRM con IndexedDB - Proyecto para alumnos</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        input, button { padding: 0.5em; margin: 0.2em 0; width: 100%; }
+        input:focus { border-color: blue; outline: none; background: #e7f0ff; }
+
+        /* Estilos campos válidos e inválidos */
+        .valid { border: 2px solid green !important; background: #e6ffe6; }
+        .invalid { border: 2px solid red !important; background: #ffe6e6; }
+
+        button:disabled { background: #ccc; cursor: not-allowed; }
+
+        ul { list-style: none; padding: 0; max-width: 600px; }
+        li { padding: 0.5em; border-bottom: 1px solid #ccc; display: flex; justify-content: space-between; align-items: center; }
+        li span { flex-grow: 1; margin-right: 1em; }
+        .actions button { margin-left: 0.5em; }
+    </style>
+</head>
+<body>
+
+<h1>CRM con IndexedDB - Proyecto para alumnos</h1>
+
+<form id="client-form" autocomplete="off">
+    <label>Nombre completo:</label>
+    <input id="name" name="name" type="text" placeholder="Nombre completo" required>
+
+    <label>Email:</label>
+    <input id="email" name="email" type="email" placeholder="ejemplo@dominio.com" required>
+
+    <label>Teléfono:</label>
+    <input id="phone" name="phone" type="text" placeholder="123456789" required>
+
+    <button id="add-btn" type="submit" disabled>
+        Agregar Cliente
+    </button>
+</form>
+
+<h2>Listado de Clientes</h2>
+<ul id="clients-list">
+    <!-- Se llena dinámicamente -->
+</ul>
+
+<!-- Enlaza tu archivo JS -->
+<script src="js/crm-indexeddb.js"></script>
+
+</body>
+</html>
+
+
